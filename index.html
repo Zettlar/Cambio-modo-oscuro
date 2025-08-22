@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio modo Oscuro</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            color: palevioletred;
+            padding: 50px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display:flex;
+            flex-direction: column;}
+        
+        .darkbody {
+            background-color:darkgray;
+            color: rgb(250, 231, 234);
+            padding: 50px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            display:flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        p {
+            width: 400px;
+            height: 300px;
+            justify-content: center;
+            text-align: justify;
+        }
+        
+        #boton { 
+            margin-top: 100px;
+            background-color: aliceblue;
+            width: 125px;
+            height: 50px;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Cambio Modo Oscuro</h1>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt praesentium perspiciatis quasi possimus nihil enim. Aliquam tenetur eos ipsa sapiente, debitis dicta atque maxime animi a illo amet molestiae labore pariatur quia consequuntur aliquid in natus aspernatur harum blanditiis unde error deserunt! Possimus facilis magni assumenda dolore repudiandae porro pariatur aperiam sint harum est ullam obcaecati odio beatae quibusdam, iusto a illo labore. Sit odit repellat, in vitae amet quas? Aliquid id nesciunt fugiat! Officia consequuntur, illo at repellendus facere, temporibus quo quas pariatur unde sapiente libero natus assumenda aperiam reprehenderit itaque, ut deleniti soluta autem quisquam inventore nemo incidunt vero! Dolores et, sapiente cum doloremque animi nam blanditiis quos atque quis sit, veniam rem reprehenderit quam repudiandae alias exercitationem voluptatum accusamus maiores nobis deserunt eligendi. Recusandae corrupti similique commodi, ipsum in enim ratione deleniti cumque perferendis, aspernatur odit eum?</p>
+    <button id="boton">Cambiar Modo Oscuro</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function (){
+        let boton = document.getElementById("boton")
+        boton.addEventListener("click" , function(){
+            document.body.classList.toggle("darkbody")
+        })
+        })
+    </script>
+</body>
+</html>
